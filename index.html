@@ -61,6 +61,7 @@
                             <span class="icon-bar"></span>
                         </button>
                         <a class="navbar-brand" href="#" itemprop="name">Bella Donna</a>
+
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -89,7 +90,7 @@
                 </div>
 				<div class="col-md-9 col-md-offset-6">
 					<h1>Call for your local area pizza delivery<br />
-					<span class="social_info"><a class="color_animation" href="tel:919-545-0900"> (919) 545-0900</a></span></h1>
+					<span class="social_info"><a class="color_animation" href="tel:919-545-0900"> <span itemprop="telephone">(919) 545-0900</span></a></span></h1>
 				</div>
             </div>
         </div>
@@ -99,7 +100,7 @@
         <section id="story" class="description_content">
             <div class="text-content container">
                 <div class="col-md-6">
-                    <h1>About Our Italian Cuisine</h1>
+                    <h1>About Our <span itemprop="servesCuisine">Italian Cuisine</span></h1>
                     <div class="fa fa-cutlery fa-2x"></div>
                     <p class="desc-text">Bella Donna is an Italian restaurant and gourmet pizzeria located in Pittsboro, NC. Bella Donna specializes in Tuscan dishes and pizzas made with the area's finest ingredients. Fresh pasta made to order - period.</p>
                 </div>
@@ -149,7 +150,7 @@
 
         <section id ="beer" class="description_content">
             <div  class="beer background_content">
-                <h1>Come Get a Crisp Drink and a Hot Snack at <span>Our Bar</span>!</h1>
+                <h1>Come Get a Cold Beer and a Hot Snack at <span>Our Bar</span>!</h1>
                 <!-- <h1>A Great Place <span>to enjoy</span> the evening</h1> -->
             </div>
             <div class="text-content container">
@@ -318,11 +319,27 @@
 
         <footer class="sub_footer">
             <div class="container">
-                <div class="col-md-4"><p class="sub-footer-text text-center">&copy; Bella Donna Italian Restaurant 2014 </p></div>
+                <div class="col-md-4">
+                  <p class="sub-footer-text text-center">&copy; Bella Donna Italian Restaurant 2014 </p>
+                </div>
                 <div class="col-md-4"><p class="sub-footer-text text-center">Back to <a href="#top">TOP</a></p>
                 </div>
-                <div class="col-md-4"><p class="sub-footer-text text-center"><a href="http://www.ideasenvy.com" target="_blank">Website support by iDeas Envy </a></p>
-				<script type="text/javascript" src="https://cdn.ywxi.net/js/1.js" async></script></div>
+                <div class="col-md-4"><p class="sub-footer-text text-center">
+                  <a href="http://www.ideasenvy.com" target="_blank">Website support by iDeas Envy </a></p>
+				          <script type="text/javascript" src="https://cdn.ywxi.net/js/1.js" async></script>
+                </div>
+            </div>
+        </footer>
+
+        <footer class="sub_footer-2">
+            <div class="container">
+                <div class="col-md-4">
+                  <p class="sub-footer-text text-center">Bella Donna Italian Restaurant </p>
+                  <p class="sub-footer-text text-center" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="streetAddress">440 East St.</span> <span itemprop="addressLocality">Pittsboro</span>, <span itemprop="addressRegion">NC</span> <span itemprop="postalCode">27312</span></p>
+                  <a href="https://www.belladonnaitalianrestaurant.com">www.BellaDonnaItalianRestaurant.com</a>
+
+                </div>
+
             </div>
         </footer>
 

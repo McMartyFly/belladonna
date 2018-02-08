@@ -97,6 +97,19 @@
 #top h1 span {
   margin: 5px 0;
 }
+footer.sub_footer-2 {
+  background: #1c1c1c;
+  text-align: center;
+}
+footer.sub_footer-2 .container .col-md-4 {
+  padding: 10px 0;
+  width: 100%;
+}
+footer.sub_footer-2 .container .col-md-4 p,
+footer.sub_footer-2 .container .col-md-4 a,
+footer.sub_footer-2 .container .col-md-4 p span {
+  color: #fff;
+}
 
 @media (min-width: 991px) {
 	#portfolio .item:nth-child(5),
