@@ -622,7 +622,7 @@ MEDIA QUERIES TABLET
     nav li{
         padding-right: -15px;
     }
-    .navbar-brand{
+    .navbar-brand span {
         font-family: 'Pacifico', cursive;
         font-size: 34px !important;
         text-decoration: none;
