@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <title>Bella Donna Italian Restaurant [Fresh Home-cooked Italian]</title>
-    <link rel="icon" href="">
-    <link rel="canonical" href="">
+    <link rel="canonical" href="https://www.belladonnaitalianrestaurant.com">
+    <link rel="icon" href="../favicon-1.ico" type="image/x-icon">
 
     <!-- imported link for font awesome icons -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -33,12 +33,23 @@
     <script type="application/ld+json">
       {
         "@context": "http://schema.org",
-        "@type": "NewsArticle",
-        "headline": "Open-source framework for publishing content",
-        "datePublished": "2015-10-07T12:02:41Z",
-        "image": [
-          "logo.jpg"
-        ]
+        "@type": "Restaurant",
+        "logo": "https://www.belladonnaitalianrestaurant.com/images/BellaDonnaItalianRestaurant-Logo.png",
+        "name": "Bella Donna Italian Restaurant",
+        "telephone": "(919) 545-0900",
+        "email": "donna@belladonnaitalianrestaurant.com",
+        "image": "https://www.belladonnaitalianrestaurant.com/images/BellaDonnaItalianRestaurant-Logo.png",
+        "url": "https://www.belladonnaitalianrestaurant.com",
+        "servesCuisine": "Italian Cuisine",
+        "openingHours": "Tu,We,Th 16:00-21:00 Fr,Sa 16:00-22:00",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "440 East St.",
+          "addressLocality": "Pittsboro",
+          "addressRegion": "NC",
+          "postalCode": "27312"
+        }
       }
     </script>
 
@@ -250,7 +261,71 @@
         margin-left: 5px;
       }
 
+      /* FOOTER */
+      .content .footer {
+        background: #1e1e1e;
+        padding: 20px 0;
+        text-align: center;
+      }
+      .content .footer p {
+        color: #fff;
+        margin-top: 0;
+      }
+      .content .footer div p {
+        margin: 30px 0 0;
+      }
+      .content .footer div a amp-img {
+        display: inline-block;
+      }
+      .content .footer div a p {
+        display: inline-block;
+        position: relative;
+        top: -10px;
+      }
+      .content .footer div a p span {
+        color: #c53241;
+      }
 
+      /* SIDEBAR STYLES */
+      amp-sidebar {
+        background: #1e1e1e;
+        border-radius: 0 15px 15px 0;
+        box-shadow: 3px 0px 5px rgba(0,0,0,0.5);
+        height: auto;
+        margin-top: 105px;
+      }
+      amp-sidebar ul {
+        list-style: none;
+        padding: 20px 20px 20px 0;
+        margin: 0;
+      }
+      amp-sidebar ul li {
+        background: #fff;
+        border-radius: 0 10px 10px 0;
+        margin: 0 0 10px 0;
+      }
+      amp-sidebar ul li:first-child {
+        background: #BF3B3D;
+      }
+      amp-sidebar ul li:last-child {
+        background: #408F4E;
+      }
+      amp-sidebar ul li:last-child {
+        margin: 0;
+      }
+      amp-sidebar ul li a {
+        color: #1e1e1e;
+        display: block;
+        font-family: sans-serif;
+        padding: 15px;
+        text-decoration: none;
+      }
+
+      #ourStory,
+      #contact {
+        position: relative;
+        top: -90px;
+      }
 
     </style>
 
@@ -265,7 +340,7 @@
       <div class="nav-wrap-outer">
         <div class="nav-wrap">
           <h1>Bella Donna<div><span class="green">Italian</span> <span class="red">Restaurant</span></div></h1>
-          <a class="fa fa-bars"></a>
+          <a on="tap:sidebar.toggle" class="fa fa-bars"></a>
         </div>
       </div>
 
@@ -280,6 +355,7 @@
         </div>
       </div>
 
+      <div id="contact"></div>
       <!-- BANNER 1 -->
       <div class="banner1">
         <h2>
@@ -308,6 +384,7 @@
       </div>
 
       <!-- BANNER 3 -->
+      <div id="ourStory"></div>
       <div class="banner3">
         <div class="rule"></div>
         <h2>This is Our Story...</h2>
@@ -385,11 +462,53 @@
       </div>
 
       <div class="footer">
+        <p>&copy; Bella Donna <span class="red">Italian</span> <span class="green">Restaurant</span> 2018 </p>
+        <div>
+          <p>Website by:</p>
+          <a href="http://www.ideasenvy.com">
+            <amp-img src="../images/ideas-envy-logo.png" height="32" width="32"></amp-img>
+            <p><span>Ideas Envy</span> LLC</p>
+          </a>
 
+        </div>
       </div>
 
     </div>
     <!-- END MAIN AMP CONTENT -->
+
+    <!-- AMP SIDEBAR -->
+    <amp-sidebar id="sidebar"
+      layout="nodisplay"
+      side="left">
+      <ul>
+        <li>
+          <a href="#ourStory" on="tap:ourStory.scrollTo">Our Story</a>
+        </li>
+        <li>
+          <a href="https://www.belladonnaitalianrestaurant.com/#menu" target="_blank">Menu</a>
+        </li>
+        <li>
+          <a href="#contact" on="tap:contact.scrollTo">Contact Us</a>
+        </li>
+      </ul>
+    </amp-sidebar>
+
+    <!-- google tag manager -->
+    <amp-analytics type="googleanalytics">
+      <script type="application/json">
+      {
+        "vars": {
+          "account": "GTM-M5WCVLT"
+        },
+        "triggers": {
+          "trackPageview": {
+            "on": "visible",
+            "request": "pageview"
+          }
+        }
+      }
+      </script>
+    </amp-analytics>
 
   </body>
 </html>
