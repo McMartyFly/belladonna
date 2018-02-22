@@ -92,6 +92,11 @@ body.noscroll {
   max-width: 100%;
 }
 
+#menu {
+  position: relative;
+  top: -20px;
+}
+
 #top h1 {
   background: rgba(0,0,0,0.5);
   color: #fff;

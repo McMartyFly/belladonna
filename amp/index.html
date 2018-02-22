@@ -1,0 +1,395 @@
+<!doctype html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <title>Bella Donna Italian Restaurant [Fresh Home-cooked Italian]</title>
+    <link rel="icon" href="">
+    <link rel="canonical" href="">
+
+    <!-- imported link for font awesome icons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- imported link for google font -->
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+
+    <!-- imported scripts for sidebar support -->
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+    <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
+
+    <!-- imported scripts for google tag manager -->
+    <script async custom-element="amp-analytics"src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+
+    <!-- imported script for facebook like buttons -->
+    <script async custom-element="amp-facebook-like" src="https://cdn.ampproject.org/v0/amp-facebook-like-0.1.js"></script>
+
+    <!-- imported script for iframes -->
+    <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+    <!-- STRUCTURED DATA -->
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Open-source framework for publishing content",
+        "datePublished": "2015-10-07T12:02:41Z",
+        "image": [
+          "logo.jpg"
+        ]
+      }
+    </script>
+
+    <style amp-custom>
+      /* PAGE STYLES GO HERE */
+      .content {
+        font-family: sans-serif;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      .green {
+        color: #408F4E;
+      }
+      .red {
+        color: #BF3B3D;
+      }
+
+      /* NAVIGATION STYLES */
+      .nav-wrap-outer {
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+      }
+      .content .nav-wrap {
+        background: #1e1e1e;
+        box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+        height: 90px;
+        margin: 0 auto;
+        max-width: 600px;
+        position: relative;
+      }
+      .content .nav-wrap h1 {
+        color: #fff;
+        display: block;
+        font-family: 'Pacifico', cursive;
+        font-size: 30px;
+        font-weight: lighter;
+        line-height: 30px;
+        margin: 0;
+        padding: 18px 0;
+        text-align: center;
+      }
+      .content .nav-wrap h1 div {
+        font-size: 20px;
+      }
+      .content .nav-wrap a {
+        color: #fff;
+        font-size: 40px;
+        position: absolute;
+        right: 28px;
+        top: 25px;
+      }
+
+      /* HEADER IMG AND COPY STYLES */
+      .content .header-img-wrap {
+        margin-top: 80px;
+        position: relative;
+      }
+      .content .header-img-wrap amp-img {
+        opacity: 0.7;
+      }
+      .content .header-img-wrap .company-name {
+        margin-top: -85px;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        width: 100%;
+      }
+      .content .header-img-wrap .company-local {
+        bottom: 0;
+        font-size: 10px;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+      }
+      .content .header-img-wrap .company-local h2 {
+        color: #1e1e1e;
+      }
+      .content .header-img-wrap .company-name h1 {
+        color: #1e1e1e;
+        text-shadow: 0px 2px #fff;
+        font-family: 'Pacifico', cursive;
+      }
+      .content .header-img-wrap .company-name h1 .italian {
+        text-shadow: 0px 2px #408F4E;
+      }
+      .content .header-img-wrap .company-name h1 .restaurant {
+        text-shadow: 0px 2px #BF3B3D;
+      }
+
+      /* BANNER1 STYLES */
+      .content .banner1,
+      .content .banner2,
+      .content .banner4 {
+        background: #1e1e1e;
+      }
+      .content .banner1 h2,
+      .content .banner2 h2,
+      .content .banner4 h2 {
+        color: #fff;
+        display: block;
+        margin: 0;
+        padding: 10px 5px;
+        text-align: center;
+      }
+      .content .banner1 ul,
+      .content .banner2 ul {
+        list-style: none;
+        padding: 0;
+      }
+      .content .banner2 ul {
+        margin: 24px 0 0;
+      }
+      .content .banner1 ul li,
+      .content .banner2 ul li {
+        margin: 0 auto;
+        position: relative;
+      }
+      .content .banner1 ul li i,
+      .content .banner2 ul li i {
+        font-size: 10px;
+        left: -5px;
+        position: relative;
+        top: -5px;
+      }
+
+      /* BUSINESS HOURS */
+      .content .business-hours h2,
+      .content .business-hours p {
+        text-align: center;
+      }
+
+      /* BANNER 3 */
+      .content .banner3 {
+        margin: 20px auto;
+        text-align: center;
+      }
+      .content .banner3 .rule {
+        border-radius: 50%;
+        height: 7px;
+        margin: 0 auto;
+        width: 85%;
+      }
+      .content .banner3 .rule:first-child {
+        background: #BF3B3D;
+      }
+      .content .banner3 .rule:last-child {
+        background: #408F4E;
+      }
+
+      /* BANNER 4 */
+      .content .banner4 {
+        padding: 10px 0 20px;
+      }
+      .content .banner4 a {
+        background: #BF3B3D;
+        border-radius: 5px;
+        color: #fff;
+        display: block;
+        margin: 0 auto;
+        padding: 20px 0;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        width: 300px;
+      }
+
+      /* ABOUT SECTION */
+      .content .about {
+
+      }
+      .content .about h1,
+      .content .about p {
+        padding: 0 10px;
+      }
+      .content .about .gluten {
+        font-style: italic;
+      }
+      .content .about .rule-wrap {
+        margin: 20px auto;
+      }
+      .content .about .rule-wrap .rule {
+        border: 1px solid #000;
+        border-radius: 50%;
+        height: 7px;
+        margin: 0 auto;
+        width: 85%;
+      }
+      .content .about .rule-wrap .rule:first-child {
+        border: none;
+        background: #BF3B3D;
+      }
+      .content .about .rule-wrap .rule:last-child {
+        border: none;
+        background: #408F4E;
+        margin: 10px auto 0;
+      }
+
+      /* FACEBOOK LIKE BUTTON */
+      .content .facebook {
+        text-align: center;
+      }
+      .content .facebook h2 {
+        color: #3b5998;
+      }
+      .content .facebook h2 i {
+        margin-left: 5px;
+      }
+
+
+
+    </style>
+
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  </head>
+  <body>
+
+    <!-- MAIN AMP CONTENT -->
+    <div class="content">
+
+      <!-- NAVIGATION BAR -->
+      <div class="nav-wrap-outer">
+        <div class="nav-wrap">
+          <h1>Bella Donna<div><span class="green">Italian</span> <span class="red">Restaurant</span></div></h1>
+          <a class="fa fa-bars"></a>
+        </div>
+      </div>
+
+      <!-- HEADER IMAGE -->
+      <div class="header-img-wrap">
+        <amp-img src="../images/serving-a-slice-of-pizza.jpg" layout="responsive" height="706" width="1200" alt="Serving a slice of pizza"></amp-img>
+        <div class="company-name">
+          <h1>Bella Donna<br><span class="italian">Italian</span> <span class="restaurant">Restaurant</span></h1>
+        </div>
+        <div class="company-local">
+          <h2>Located in the Heart of Pittsboro, NC!</h2>
+        </div>
+      </div>
+
+      <!-- BANNER 1 -->
+      <div class="banner1">
+        <h2>
+          Call Us for Your:
+          <ul>
+            <li><i class="fa fa-circle red"></i>Local Pizza Delivery</li>
+            <li><i class="fa fa-circle"></i>Event Catering</li>
+            <li><i class="fa fa-circle green"></i>Group Reservations</li>
+          </ul>
+          (919) 545-0900
+        </h2>
+      </div>
+
+      <!-- BUSINESS HOURS OF OPERATION -->
+      <div class="business-hours">
+        <h2>Business Hours</h2>
+        <p>Monday: Closed</P>
+        <p>Tuesday, Wednesday, Thursday:<br>4:00 PM - 9:00 PM</p>
+        <p>Friday &amp; Saturday:<br>4:00 PM - 10:00 PM</p>
+      </div>
+
+      <!-- BANNER 4 -->
+      <div class="banner4">
+        <h2>Check Out Our Menu</h2>
+        <a href="https://www.belladonnaitalianrestaurant.com/#menu" target="_blank">Menu</a>
+      </div>
+
+      <!-- BANNER 3 -->
+      <div class="banner3">
+        <div class="rule"></div>
+        <h2>This is Our Story...</h2>
+        <div class="rule"></div>
+      </div>
+
+      <!-- ABOUT SECTION -->
+      <div class="about">
+
+        <amp-img src="../images/fine-dining-table-night.jpg" layout="responsive" height="270" width="426" alt="Fine Dining Set Table"></amp-img>
+        <h1>Affordable Home-cooked Italian Cuisine</h1>
+        <p>Bella Donna is an Italian restaurant and gourmet pizzeria located in Pittsboro, NC. Bella Donna specializes in Tuscan dishes and pizzas made with the area's finest ingredients. Fresh pasta made to order - period.</p>
+
+        <div class="rule-wrap">
+          <div class="rule"></div>
+          <div class="rule"></div>
+        </div>
+
+        <amp-img src="../images/beer_spec.jpg" layout="responsive" height="270" width="426" alt="Fun and Food at the Bar"></amp-img>
+        <h1>Cold Beer &amp; Hot Snacks at Our Bar</h1>
+        <p>Whether it's a local craft brew or one of our delicious fine wines, we can make sure you have what you need to wash down your great dinner from Bella Donna Italian Restuarant. Our wine list is extensive. Our craft and other beers will appeal to the beer lovers. Our bar staff is also prepared to mix your favorite libation.</p>
+
+        <div class="rule-wrap">
+          <div class="rule"></div>
+          <div class="rule"></div>
+        </div>
+
+        <amp-img src="../images/pastafresh2.jpg" layout="responsive" height="270" width="426" alt="Homemade Pasta"></amp-img>
+        <h1>Homemade Pasta &amp; Bread Prepared Every Day!</h1>
+        <p>We love the smell of fresh baked bread. We also are picky about how our pasta is made. This is why our bread and pasta is made using only the simplest of ingredients to bring out smells and flavors that beckon people from the area. Stop by anytime and experience simplicity at its finest.</p>
+        <p>Our pasta is reknown for being the freshest around. We never use dried pasta. Each pasta dish is made with the finest ingredients by hand. The pasta is rolled out and milled to order.</p>
+        <p class="gluten">&#42;We offer Gluten Free pasta (made from scratch) for those who prefer to eliminate gluten from their diet.</p>
+
+        <div class="rule-wrap">
+          <div class="rule"></div>
+          <div class="rule"></div>
+        </div>
+
+      </div>
+
+      <!-- BANNER 2 -->
+      <div class="banner2">
+        <h2>
+          Ask About Our:
+          <ul>
+            <li><i class="fa fa-circle red"></i>Wine &amp; Painting Events</li>
+            <li><i class="fa fa-circle"></i>Open Mic Nights</li>
+            <li><i class="fa fa-circle green"></i>And Much More!</li>
+          </ul>
+        </h2>
+      </div>
+
+      <!-- FACEBOOK LIKE BUTTONS -->
+      <div class="facebook">
+        <h2>Like Us On Facebook!<i class="fa fa-thumbs-o-up"></i></h2>
+        <amp-facebook-like width=100 height=20
+            layout="fixed"
+            data-layout="button_count"
+            data-size="large"
+            data-href="https://www.facebook.com/belladonnapittsboro/">
+        </amp-facebook-like>
+      </div>
+
+      <!-- GOOGLE MAP -->
+      <div class="google-map">
+        <amp-iframe width="500"
+          title="Netflix House of Cards branding: The Stack"
+          height="281"
+          layout="responsive"
+          sandbox="allow-scripts allow-same-origin allow-popups"
+          allowfullscreen
+          frameborder="0"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12957.056668495452!2d-79.1695803!3d35.7197212!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x765c1a311124c555!2sBella+Donna+Italian+Restaurant!5e0!3m2!1sen!2sus!4v1495832759472">
+        </amp-iframe>
+      </div>
+
+      <div class="footer">
+
+      </div>
+
+    </div>
+    <!-- END MAIN AMP CONTENT -->
+
+  </body>
+</html>
