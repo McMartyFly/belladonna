@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- imported link for google font -->
-    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" >
 
     <!-- imported scripts for sidebar support -->
     <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
@@ -100,7 +100,7 @@
       .content .nav-wrap h1 div {
         font-size: 20px;
       }
-      .content .nav-wrap a {
+      .content .nav-wrap .hamburger {
         color: #fff;
         font-size: 40px;
         position: absolute;
@@ -346,7 +346,7 @@
       <div class="nav-wrap-outer">
         <div class="nav-wrap">
           <h1>Bella Donna<div><span class="green">Italian</span> <span class="red">Restaurant</span></div></h1>
-          <a on="tap:sidebar.toggle" class="fa fa-bars"></a>
+          <a role="button" on="tap:sidebar.toggle" class="fa fa-bars hamburger"></a>
         </div>
       </div>
 
